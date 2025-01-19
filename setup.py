@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Topsis technique for MCDM'
 from pathlib import Path
 this_directory = Path(__file__).parent
