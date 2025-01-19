@@ -4,7 +4,9 @@ import os
 
 VERSION = '0.0.1'
 DESCRIPTION = 'Topsis technique for MCDM'
-LONG_DESCRIPTION = 'A package that implements the TOPSIS technique for MCDM'
+from pathlib import Path
+this_directory = Path(__file__).parent
+LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
