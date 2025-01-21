@@ -6,7 +6,7 @@ This package implements the `TOPSIS` technique for Multi-Criteria Decision Makin
 
 You can install the package using `pip`. First,run:
 ```
-pip install Topsis-Mohit-102397005
+pip install topsis_mohit_102397005
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ After installing the package, you can use it from the command line.
 ## Command Line Usage
 To use the TOPSIS package from the command line, run the following command:
 ```
-python -m Topsis-Mohit-102397005 inputFileName weights impacts resultFileName
+python -m topsis_mohit_102397005 inputFileName weights impacts resultFileName
 ```
 
 ### Example
@@ -30,7 +30,7 @@ M4,28000,6,9
 
 You can run the following command:
 ```
-python -m Topsis-Mohit-102397005 data.csv "0.25,0.25,0.5" "-,+,+" result.csv
+python -m topsis_mohit_102397005 data.csv "0.25,0.25,0.5" "-,+,+" result.csv
 ```
 This is the `result.csv` file created after running the command:
 ```
@@ -46,7 +46,7 @@ You can also use the TOPSIS package by calling the function directly in your Pyt
 
 ### Example
 ```
-from Topsis-Mohit-102397005 import run_topsis
+from topsis_mohit_102397005 import run_topsis
 
 inputFileName = 'data.csv'
 weights = '0.25,0.25,0.5'
