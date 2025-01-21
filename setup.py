@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.32'
+VERSION = '0.0.22'
 DESCRIPTION = 'Topsis technique for MCDM'
 from pathlib import Path
 this_directory = Path(__file__).parent
@@ -10,7 +10,7 @@ LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
-    name="topsis_mohit_102397005",
+    name="topsis-mohit-102397005",
     version=VERSION,
     author="Mohit Bansal",
     author_email="mohitbansal0031@gmail.com",
