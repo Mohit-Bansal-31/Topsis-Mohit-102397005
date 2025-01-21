@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.2'
+VERSION = '0.0.28'
 DESCRIPTION = 'Topsis technique for MCDM'
 from pathlib import Path
 this_directory = Path(__file__).parent
@@ -18,7 +18,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
-    install_requires=['pandas', 'numpy','sys'],
+    install_requires=['pandas', 'numpy'],
     keywords=['python', 'topsis', 'mcdm', 'decision making'],
     classifiers=[
         "Development Status :: 1 - Planning",
