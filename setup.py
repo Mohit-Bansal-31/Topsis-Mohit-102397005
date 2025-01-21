@@ -10,7 +10,7 @@ LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
-    name="Topsis_Mohit_102397005",
+    name="topsis_mohit_102397005",
     version=VERSION,
     author="Mohit Bansal",
     author_email="mohitbansal0031@gmail.com",
