@@ -2,11 +2,15 @@ import sys
 import pandas as pd
 import numpy as np
 
-def validate_inputs(inputFileName, weights, impacts, resultFileName):
-    if len(sys.argv) != 5:
-        print("Error: Incorrect number of parameters. Usage: python script.py inputFileName weights impacts resultFileName")
-        sys.exit(1)
 
+
+def validate_inputs(inputFileName=None, weights=None, impacts=None, resultFileName=None):
+    if inputFileName is None or weights is None or impacts is None or resultFileName is None:
+        if len(sys.argv) != 5:
+            print("Error: Incorrect number of parameters. Usage: python script.py inputFileName weights impacts resultFileName")
+            sys.exit(1)
+        inputFileName, weights, impacts, resultFileName = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    
     # Check if weights and impacts are separated by commas
     weights = weights.split(',')
     impacts = impacts.split(',')
@@ -36,7 +40,7 @@ def validate_inputs(inputFileName, weights, impacts, resultFileName):
         if not pd.api.types.is_numeric_dtype(df[col]):
             print(f"Error: Column '{col}' must contain numeric values only.")
             sys.exit(1)
-
+            
     return df, weights, impacts
 
 def topsis(inputFileName, weights, impacts, resultFileName):
